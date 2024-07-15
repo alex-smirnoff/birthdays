@@ -1,0 +1,150 @@
+
+body{
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: fit-content;
+}
+h5{
+  color: black;
+  font-size: 10px;
+  margin: 0;
+  font-weight: 400;
+  justify-self: center;
+}
+.processDiv{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+  width: 100%;
+  height: 100px;
+  padding: 30px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 3px 2px rgba(.1, .1, .1, .1);
+  margin: 20px 0;
+}
+#fileButton {
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#fileButton{
+  background-color: #4CAF50;
+}
+#fileButton:hover {
+  background-color: #60c365;
+}
+#fileButton:disabled {
+  background-color: #a5acac;
+  cursor: default;
+}
+#filespan{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 170px;
+  font-size: 12px;
+}
+#fileInput{
+  display: none;
+}
+#loaderspan{
+  display: none;
+  font-size: 15px;
+  margin: 10px 0; 
+}
+#reloadButton{
+  display: none;
+  width: fit-content;
+  font-size: 12px;
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 3px 2px rgba(.1, .1, .1, .1);
+  cursor: pointer;
+  transition: .5s ease;
+}
+#reloadButton:hover{
+  background-color: white;
+  box-shadow: 1px 3px 4px 2px rgba(.3, .3, .3, .3);
+}
+.loader8 {
+  display: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  background: #E6E6E6;
+}
+
+.loader8:after {
+  content: " ";
+  display: block;
+  width: 120px;
+  top: -50%;
+  height: 250%;
+  position: absolute;
+  animation: greenglow 3s linear infinite;
+  z-index: 2;
+  background: #1CAE30;
+}
+
+@keyframes greenglow {
+  from {
+    left: -120px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+  a{
+    color: #2ecc71;
+    font-family: tahoma;
+  }
+  h2{
+    color: black;
+  }
+  .comments{
+    width: fit-content;
+    margin: 100px auto;
+  }
+  .datePickers {
+    text-align: center;
+    margin: 20px 0;
+}
+.datePickers label {
+    margin: 0 10px;
+    color: #333;
+}
+.datePickers input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.datePickers input:disabled {
+  opacity: 40%;
+}
+  
+  
+  
+  
+  
